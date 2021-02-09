@@ -52,6 +52,24 @@
       "revId": "241d995e9b1769e9dbcd907983459e1bf5c86d5d",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a95eed76_ea8d670b",
+        "filename": "ansible-role-qdr-config.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 718
+      },
+      "writtenOn": "2021-02-09T19:34:24Z",
+      "side": 1,
+      "message": "I\u0027m going to update this to master for the moment, to see if that\u0027ll work. The version can be updated later, as far as I know.\nHowever, I don\u0027t know how it interacts with rdoinfo/tags/\u003crelease\u003e.yml",
+      "parentUuid": "1f51fe59_dd02663c",
+      "revId": "241d995e9b1769e9dbcd907983459e1bf5c86d5d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
