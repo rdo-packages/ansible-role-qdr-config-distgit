@@ -2,6 +2,9 @@
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
+%{?dlrn: %global tarsources ansible-role-qdr-config}
+%{!?dlrn: %global tarsources qdr-config-ansible-role}
+
 Name:           ansible-role-qdr-config
 Version:        XXX
 Release:        XXX
@@ -21,7 +24,7 @@ Requires:       python3dist(ansible)
 Ansible role for creating qdr configs
 
 %prep
-%autosetup -n ansible-role-qdr-config-%{upstream_version} -S git
+%autosetup -n %{tarsources}-%{upstream_version} -S git
 
 
 %build
