@@ -2,9 +2,12 @@
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
+%{?dlrn: %global tarsources ansible-role-qdr-config}
+%{!?dlrn: %global tarsources qdr-config-ansible-role}
+
 Name:           ansible-role-qdr-config
-Version:        XXX
-Release:        XXX
+Version:        0.0.1
+Release:        1%{?dist}
 Summary:        Ansible role for creating qdr configs
 
 License:        ASL 2.0
@@ -21,7 +24,7 @@ Requires:       python3dist(ansible)
 Ansible role for creating qdr configs
 
 %prep
-%autosetup -n ansible-role-qdr-config-%{upstream_version} -S git
+%autosetup -n %{tarsources}-%{upstream_version} -S git
 
 
 %build
@@ -39,4 +42,7 @@ cp -r ./* %{buildroot}%{_datadir}/ansible/roles/qdr_config
 %exclude %{_datadir}/ansible/role/qdr_config/tests/*
 
 %changelog
+* Tue Aug 17 2021 RDO <dev@lists.rdoproject.org> 0.0.1-1
+- Update to 0.0.1
+
 
