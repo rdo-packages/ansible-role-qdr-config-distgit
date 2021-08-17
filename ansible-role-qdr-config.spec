@@ -21,7 +21,7 @@ Requires:       python3dist(ansible)
 Ansible role for creating qdr configs
 
 %prep
-%autosetup -n ansible-role-qdr-config-%{upstream_version} -S git
+%autosetup -n qdr-config-ansible-role-%{upstream_version} -S git
 
 
 %build
