@@ -17,7 +17,7 @@ Source0:        https://github.com/infrawatch/qdr-config-ansible-role/archive/%{
 BuildArch:      noarch
 BuildRequires:  git-core
 
-Requires:       python3dist(ansible)
+Requires: (python3dist(ansible) or ansible-core >= 2.11)
 
 %description
 
